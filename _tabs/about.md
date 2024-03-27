@@ -3,7 +3,7 @@
 icon: fas fa-info-circle
 order: 1
 ---
-![Ethan Tomford]("/assets/ethan_tomford,jph)
+![Ethan Tomford]("/assets/ethan_tomford.jpg")
 
 I am a fresh CIS: Cybersecurity degree graduate from the Unvirsity of Akron looking to start my journey into the information security world. 
 
