@@ -1,6 +1,6 @@
 # Ethan Tomford InfoSec Blog
 
-This is the repository for my personal information security blog. 
+Repository for my personal information security blog. 
 
 ## License
 
