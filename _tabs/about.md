@@ -9,7 +9,7 @@ order: 1
 ---
 # Ethan Tomford 
 
-A fresh graduate from the Unvirsity of Akron with Bachelors of Science in Computer Information Systems, Cybersecurity. I am looking to start my journey into the information security world. 
+A fresh graduate from the Unvirsity of Akron with a Bachelors of Science in Computer Information Systems, Cybersecurity. I am looking to start my journey into the information security world. 
 
 ### Education:
 **B.S. Computer Information Systems: Cybersecurity**
