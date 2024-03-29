@@ -34,7 +34,7 @@ At the beginning of the second semester of my sophomore year (2022), ACDC's pres
 ### TCM and TryHackMe
 John had mentioned starting with The Cyber Mentor (TCM)'s free [Zero to Hero Pentesting](https://www.youtube.com/watch?v=qlK174d_uu8&list=PLLKT__MCUeiwBa7d7F_vN1GUwz_2TmVQj) course and that's what I did. I watched well over 14 hours of content through TCM’s online YouTube course. I would take notes and follow along with what the video was doing, but I found myself struggling to fully grasp the concepts. This is when I discovered TryHackMe ([THM](https://tryhackme.com/)), an "anyone" can learn cybersecurity platform.
 
-I signed up to TryHackeMe and began their [Complete Beginner](https://tryhackme.com/paths) pathway. I was hooked, spending the next two months going through the complete beginner and pre-security pathways. I was starting to beginning to become comfortable with Linux using the command line. I also started to understand the general core concepts when it comes to cybersecurity, PenTesting, Linux, Windows, and vulnerabilities.
+I signed up to TryHackeMe and began their [Complete Beginner](https://tryhackme.com/paths) pathway. I was hooked, spending the next two months going through the complete beginner and pre-security pathways. I was beginning to become comfortable with Linux using the command line. I also started to understand the general core concepts when it comes to cybersecurity, PenTesting, Linux, Windows, and vulnerabilities.
 
 ![TryHackMe Badge](https://tryhackme-badges.s3.amazonaws.com/est15.png)
 _My TryHackMe Profile Badge_
@@ -68,8 +68,8 @@ There is also a simulated Active Directory (AD) environment within the exam wort
 ### PEN-200 2022 Course
 I cannot speak much about the current course content and exercises as I completed the 2022 version of the course. While in school, I spent about 4-months fully digesting the PEN-200 course content and completing each section’s practical exercises. By the end of January 2022, I had completed 100% of the course content and exercises. I decided to start focusing on machines from the infamous [Tj Null](https://docs.google.com/spreadsheets/d/1dwSMIAPIam0PuRBkCiDI88pU3yzrqqHkDtBngUHNCw8/edit#gid=665299979) list of OSCP-relevant boxes.
 
-## PWK & HTB Labs
-Starting to practically apply my knowledge through compromising these boxes is where I felt that I prepared myself the best for tackling the OSCP. I would say I went a little overkill when it came to this. From TJ Null's list, I fully compromised 11 PWK Windows machines, 9 PWK Linux machines, 15 HTB Windows machines, and 12 HTB Linux machines for a total of 47. These are just the machines I completed from the TJ Null list, there are other machines I did for additional learning and fun. By this time I started to form a solid methodology for tackling machines, including improving my note-taking. 
+## Pentesting With Kali (PWK) & HTB Labs
+Starting to practically apply my knowledge through compromising these boxes is where I felt that I prepared myself the best for tackling the OSCP. I would say I went a little overkill when it came to this. From TJ Null's list, I fully compromised 11 PWK Windows machines, 9 PWK Linux machines, 15 HTB Windows machines, and 12 HTB Linux machines for a total of 47 boxes. These are just the machines I completed from the TJ Null list, there are other machines I did for additional learning and fun. By this time I started to form a solid methodology for tackling machines, including improving my note-taking. 
 
 ## PEN-200 Challenge Labs
 The PEN-200 Challenge Labs provide three network pentest challenges MedTech, Relia, and Skylark. These are great for honing your PenTesting methodology and note-taking but are not like the OSCP exam environment. I started by completing MedTech and then Relia, but never got around to Skylark. I would recommend completing these if there is enough time, as they are fun challenges.
@@ -91,8 +91,8 @@ _OSCP Badge_
 
 I could not get a foothold on two of the standalone machines. It sucked having to use the bonus points as a crutch for passing. After the exam, I used my notes to find that I was missing a very common enumeration step on a certain protocol. I'm almost certain that if I did what I now know I would have gotten at least an initial foothold. A pass is still a pass! Just keep in mind that [HackTricks](https://book.hacktricks.xyz/) is your friend.  
 
-### [Ligolo-ng](https://github.com/nicocha30/ligolo-ng) Proxying
-I'm not sure if they make mention of Ligolo-ng in the current PEN-200, but for me, they recommended using Chisel. To make your life so much easier when tunneling to the internal network use Ligolo-ng. This [article](https://kentosec.com/2022/01/13/pivoting-through-internal-networks-with-sshuttle-and-ligolo-ng/) helped me understand how to utilize the tool.  
+### Tunneling with Ligolo-ng
+I'm not sure if they make mention of Ligolo-ng in the current PEN-200, but for me, they recommended using Chisel. To make your life so much easier when tunneling to the internal network use [Ligolo-ng](https://github.com/nicocha30/ligolo-ng). This [article](https://kentosec.com/2022/01/13/pivoting-through-internal-networks-with-sshuttle-and-ligolo-ng/) helped me understand how to utilize the tool.  
 
 ### Note Taking
 Prior to the exam, I created a template for all my notes. As seen in the screenshot below, I broke down each machine into various sections. Each protocol identified during the initial reconnaissance phase gets a separate page to detail my enumeration steps and thought process at every step of the way.   
