@@ -29,7 +29,7 @@ Another large factor that helped me obtain a solid base and interest in cyber wa
 ---
 
 ## Focus Shift Towards Offensive Security
-At the beginning of the second semester of my sophomore year (2022), ACDC's president at the time, [John Crynick](https://www.linkedin.com/in/john-c-387a61172/), first introduced me to the idea of offensive cybersecurity. During one of our club’s meetings, he walked through a retired easy machine on [HackTheBox](https://app.hackthebox.com/profile/811699). I hadn't the slightest idea of anything he was doing, but I wanted to learn. 
+At the beginning of the second semester of my sophomore year (2022), ACDC's president at the time, [John Crynick](https://www.linkedin.com/in/john-c-387a61172/), first introduced me to the idea of offensive cybersecurity. During one of our club’s meetings, he walked through a retired easy machine on [HackTheBox](https://app.hackthebox.com/profile/811699). I hadn't have the slightest idea of anything he was doing, but I wanted to learn. 
 
 ### TCM and TryHackMe
 John had mentioned starting with The Cyber Mentor (TCM)'s free [Zero to Hero Pentesting](https://www.youtube.com/watch?v=qlK174d_uu8&list=PLLKT__MCUeiwBa7d7F_vN1GUwz_2TmVQj) course and that's what I did. I watched well over 14 hours of content through TCM’s online YouTube course. I would take notes and follow along with what the video was doing, but I found myself struggling to fully grasp the concepts. This is when I discovered TryHackMe ([THM](https://tryhackme.com/)), an "anyone" can learn cybersecurity platform.
