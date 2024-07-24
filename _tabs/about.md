@@ -22,7 +22,7 @@ A fresh graduate from the University of Akron with a Bachelor of Science in Comp
 ### Certifications:
 - Offensive Security Certified Professional (OSCP)
 - Certified Red Team Operator (CRTO)  
-_estimated: August, 2024_
+
 
 ### Security Interests:
 - Web Applications
