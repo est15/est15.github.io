@@ -190,7 +190,7 @@ _Laravel Exploit Google Searching_
 #### Gaining A Shell
 Looks like [CVE-2023-24249](https://nvd.nist.gov/vuln/detail/CVE-2023-24249) is for exploiting an Arbitrary File Upload Vulnerability in Laravel-admin v.1.8.19, which allows attacked to execute arbitrary code via craft PHP file.
 
-FlyD provides a [Proof of Concept (PoC) walkthrough]() for exploiting this vulnerability, which basically just requires intercepting the image upload request and changing the `filename` to include `.php`. 
+FlyD provides a [Proof of Concept (PoC) walkthrough](https://flyd.uk/post/cve-2023-24249/) for exploiting this vulnerability, which basically just requires intercepting the image upload request and changing the `filename` to include `.php`. 
 ![FlyD Laravel Exploit PoC](FlyD Upload Bypass PoC.png)
 _FlyD Arbitrary Upload Bypass PoC_
 
