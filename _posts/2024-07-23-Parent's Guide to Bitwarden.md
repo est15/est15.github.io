@@ -2,7 +2,7 @@
 layout: post
 date: 2024-07-23
 title: "My Parents Bitwarden Guide"
-categories: [Pentesting]
+categories: []
 tags: [Bitwarden,Password Manager]
 img_path: /assets/parents-bitwarden-guide/
 render_with_liquid: false
@@ -27,7 +27,7 @@ A password manager is an application that will store and generate complex passwo
 
 ### Bitwarden
 
-[Bitwarden](https://bitwarden.com/download/) is an open-source, meaning the source code is publicly available, password manager. To get slightly into the technical side of things Bitwarden uses end-to-end encryption for all data stored within your account’s vault. Only your account’s set email and master password combination can decrypt the vault’s content. Additionally, all data stored on Bitwarden servers are encrypted and hashed. I highly recommend reading through Bitwarden’s “[Vault Security in the Bitwarden Password Manager](https://bitwarden.com/blog/vault-security-bitwarden-password-manager/)" article to gain a better understanding of how your data is being protected. 
+[Bitwarden](https://bitwarden.com/download/) is an open-source (free), meaning the source code is publicly available, password manager. To get slightly into the technical side of things Bitwarden uses end-to-end encryption for all data stored within your account’s vault. Only your account’s set email and master password combination can decrypt the vault’s content. Additionally, all data stored on Bitwarden servers are encrypted and hashed. I highly recommend reading through Bitwarden’s “[Vault Security in the Bitwarden Password Manager](https://bitwarden.com/blog/vault-security-bitwarden-password-manager/)" article to gain a better understanding of how your data is being protected. 
 
 [![Bitwarden Logo](bitwarden-logo.webp)](https://bitwarden.com/)
  
