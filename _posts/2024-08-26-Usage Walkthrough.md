@@ -184,15 +184,13 @@ _Usage Admin Dashboard_
 
 Looking at the footer we see `Verion 1.8.17` and in the dependencies list we see `encore/laravel-admin 1.8.18`. So it is safe to assume that the dashboard we are currently in is laravel-admin v1.8.17; Therefore, I will research exploits for this specific version:
 
-(INSERT GOOGLE LARAVEL EXPLOIT SEARCH IMAGE
-![Laravel Exploit Google Search]('Laravel-admin Exploit google search.png)
+![Laravel Exploit Google Search](Laravel-admin Exploit google search.png)
 _Laravel Exploit Google Searching_
 
 #### Gaining A Shell
 Looks like [CVE-2023-24249](https://nvd.nist.gov/vuln/detail/CVE-2023-24249) is for exploiting an Arbitrary File Upload Vulnerability in Laravel-admin v.1.8.19, which allows attacked to execute arbitrary code via craft PHP file.
 
 FlyD provides a [Proof of Concept (PoC) walkthrough]() for exploiting this vulnerability, which basically just requires intercepting the image upload request and changing the `filename` to include `.php`. 
-(INSERT FlyD PoC Exploit IMAGE)
 ![FlyD Laravel Exploit PoC](FlyD Upload Bypass PoC.png)
 _FlyD Arbitrary Upload Bypass PoC_
 
