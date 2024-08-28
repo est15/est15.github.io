@@ -9,7 +9,7 @@ render_with_liquid: false
 ---
 
 ## Introduction to GOAD
-Game of Active Directory ([GOAD](https://github.com/Orange-Cyberdefense/GOAD)) is an open-source lab by [Orange-Cyberdefense](https://github.com/Orange-Cyberdefense) is intended to "give pen-testers a vulnerable Active directory environment" to practice common AD attack techniques. 
+Game of Active Directory ([GOAD](https://github.com/Orange-Cyberdefense/GOAD)),an open-source lab by [Orange-Cyberdefense](https://github.com/Orange-Cyberdefense), is intended to "give PenTesters a vulnerable Active directory environment" to practice common AD attack tactics and techniques. 
 
 [![GOAD Logo](GOAD-Logo.png)](https://github.com/Orange-Cyberdefense/GOAD)
 
@@ -126,7 +126,7 @@ The source of the issue is a default route added to my routing table, which can 
 ![IP Routing Table](IP-Route.png)
 _IP Route - Default Route_
 
-To remove this conflicting default route I used the `sudo ip route del default via 10.193.72.1 dev eth1` command. Once this was completed the pings and internet access were not successful.
+To remove this conflicting default route I used the `sudo ip route del default via 10.193.72.1 dev eth1` command. Once this was completed the pings and internet access were successful.
 ![Successful Pings](Successful-Pings.png)
 _Successful Pings_
 

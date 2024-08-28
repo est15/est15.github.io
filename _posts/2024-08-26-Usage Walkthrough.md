@@ -80,7 +80,6 @@ Note, registering on the application does not give any additional clarity or ins
 #### Forgot-password SQLi
 I started my testing to see if the login page and/or forgot password page are susceptible to SQL injection (SQLi). Sending a single quote `'` into the forgot-password parameter causes a `HTTP/1.1 500 Internal Server Error` response.  This indicates that the server-side code is not properly sanitizing the user's input. 
 
-(INSERT forgot-password server error IMAGE)
 ![Forgot Password Error](forgot-password-Server-Error.png)
 _Forgot Password Error Response_
 
@@ -212,7 +211,7 @@ _Arbitrary File Upload Request_
 ![Laravel RCE Proof](laravel-php-rce-proof.png)
 _Laravel Webshell RCE_
 
-4. Start out netcat listener to catch the shell:
+4. Start a netcat listener to catch the shell:
 ```bash
 nc -lvnp 4444
 ```
