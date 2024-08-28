@@ -138,7 +138,8 @@ Once you have created the item use Bitwarden’s auto-fill feature to insert the
 ![Insert GitHub auto-fill Screenshot](GitHub Auto Fill.png)
 _GitHub auto-fill in Action_
 
-## Bitwarden on your Mobile Device (COMING SOON)
+## Bitwarden on your Mobile Device
+**(COMING SOON)**
 
 Bitwarden on your phone functions in the same way that it does on your computer. However, we have to enable certain features on the phone for the password manager to work accordingly. Reference the below sections to utilize Bitwarden on your Android or Apple mobile devices. 
 
