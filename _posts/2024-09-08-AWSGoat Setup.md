@@ -41,6 +41,7 @@ Once we have an AWS account registered the next step is to create an `AWS_ACCESS
 - `AWS_SECRET_ACCESS_KEY` = The Secret key associated with the AWS access key, which essentially acts as the password for the access key. This is also required to connect to Amazon Keyspaces Programmatically. 
 
 Within the AWS Console in the top-right corner select *your account name* -> *security credentials* -> *Access Keys* -> *Create Access Key*:
+
 ![AWS Key Creation](Create Access key.png)
 _AWS Access Key Creation_
 > **NOTE:** When attempting to create an access key for the root user you will receive an alternatives to root user access key notification. Select the "I understand" checkbox and continue with the "Create access key" option. 
