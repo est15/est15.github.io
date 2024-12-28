@@ -363,7 +363,6 @@ _Symlnk File Created_
 
 3. Execute the `usage_management`'s Project Backup option:
 
-(INSERT Root ssh key outputted IMAGE)
 ![Root SSH Private Key](Root ssh key outputted.png)
 _Root SSH Private Key_
 
