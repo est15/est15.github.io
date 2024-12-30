@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2024-12-27
-title: "Copying Obsidian Attachments from Vault to Vault"
+title: "Sync Obsidian Attachments When Copying Vault Folders"
 categories: [Guide]
 tags: [Obsidian]
 img_path: /assets/copy-vault-attachments/
