@@ -9,7 +9,7 @@ render_with_liquid: false
 ---
 
 ## Introduction to GOAD
-Game of Active Directory ([GOAD](https://github.com/Orange-Cyberdefense/GOAD)),an open-source lab by [Orange-Cyberdefense](https://github.com/Orange-Cyberdefense), is intended to "give PenTesters a vulnerable Active directory environment" to practice common AD attack tactics and techniques. 
+Game of Active Directory ([GOAD](https://github.com/Orange-Cyberdefense/GOAD)), an open-source lab by [Orange-Cyberdefense](https://github.com/Orange-Cyberdefense), is intended to "give PenTesters a vulnerable Active directory environment" to practice common AD attack tactics and techniques. 
 
 [![GOAD Logo](GOAD-Logo.png)](https://github.com/Orange-Cyberdefense/GOAD)
 
@@ -47,7 +47,7 @@ Prior to performing the configurations and additional installations there are a 
 1. [VMware Workstation Pro](https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html)
 2. [Vagrant for Windows](https://developer.hashicorp.com/vagrant/install?product_intent=vagrant#Windows)
 
-![Vagrant-for-Windows](Vagrant-for-Windows.png)
+![Vagrant-for-Windows](Vagrant-For-Windows.png)
 _Vagrant Windows Install Screenshot_
 
 3. [Vagrant VMware Utility Driver](https://developer.hashicorp.com/vagrant/install/vmware)
