@@ -2,12 +2,13 @@
 
 - type: github
   icon: "fab fa-github"
+  url: 'https://github.com/est15'
 
 - type: twitter
   icon: "fa-brands fa-x-twitter"
 
 - type: linkedin
-  icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
+  icon: 'fab fa-linkedin'
   url:  'https://www.linkedin.com/in/ethan-tomford-71a634220'                  # Fill with your Linkedin homepage
 
 # Uncomment and complete the url below to enable more contact options
