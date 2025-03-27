@@ -13,9 +13,9 @@ timezone: America/New_York
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
-title: Ethan Tomford | Cybersecurity Professional
+title: CipherBuu Blog
 
-tagline: Insights on Information Security and Privacy
+tagline: Insights on Offensive Security and Development
 
 description: >-
   Explore Ethan Tomford's journey in cybersecurity, IT security, and privacy. With hands-on experience in data mapping, zero trust architecture, and compliance with privacy regulations, Ethan shares insights and knowledge in the evolving world of cybersecurity.
@@ -27,7 +27,7 @@ github:
   username: est15 # change to your github username
 
 twitter:
-  username: ethan_tomford # change to your twitter username
+  username: CipherBuu # change to your twitter username
 
 social:
   # Change to your full name.
@@ -36,7 +36,7 @@ social:
   email:  # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/ethan_tomford # change to your twitter homepage
+    - https://x.com/CipherBuu # change to your twitter homepage
     - https://github.com/est15 # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username

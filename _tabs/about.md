@@ -3,26 +3,20 @@
 icon: fas fa-info-circle
 order: 1
 ---
-![Ethan Tomford](/assets/ethan_tomford.jpg)
-
-
----
-# Ethan Tomford 
-
-A fresh graduate from the University of Akron with a Bachelor of Science in Computer Information Systems - Cybersecurity. I am looking to start my journey into the information security world. 
-
-### Education:
+## Education:
 **B.S. Computer Information Systems: Cybersecurity**
 
-### Experience:
+## Experience:
 - Privacy Risk Advisory Intern @ Grant Thornton (3-Months)
 - IT Security Analyst Co-op @ The Sherwin Williams (5-Months)
 - Cybersecurity Intern @ Standard Industries (3-Months) 
 
-### Certifications:
+## Certifications:
 - Offensive Security Certified Professional (OSCP)
 - Certified Red Team Operator (CRTO)  
-
+- GIAC Python Coder (GPYC)
+- GIAC Cloud Penetration Tester (GCPN) -> *currently studying*
+- HackTheBox Certified Cloud Penetration Testing Expert (CAPE) -> *currently studying*
 
 ### Security Interests:
 - Web Applications

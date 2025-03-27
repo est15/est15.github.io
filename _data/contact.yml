@@ -6,6 +6,7 @@
 
 - type: twitter
   icon: "fa-brands fa-x-twitter"
+  url: "https://x.com/CipherBuu"
 
 - type: linkedin
   icon: 'fab fa-linkedin'
