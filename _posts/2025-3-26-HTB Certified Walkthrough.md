@@ -143,7 +143,7 @@ Then export the cypher queries' results, which will be stored in JSON format.
 _Export BH Cypher Query Results_
 
 I wrote a small Python script to extract the usernames from the JSON output. One could also use the CLI tool `jq` in order to extract the usernames, but I like to practice my Python skills whenever possible. 
-```python3
+```python
 #!/usr/bin/python3
 import json
 import pathlib
@@ -162,14 +162,17 @@ _Extract Usernames With Python Script Output_
 
 ### Visualizing Attack Path
 From this initial BloodHound enumeration we can visualize the attack path to pivoting our permissions within the domain. Our initial domain user `judith.mader` has `WriteOwner` permissions over the `Management` group. 
+
 ![Judith to Management Gropu](Pasted image 20250326193406.png)
 _judith.mader to Management Group Path_
 
 Viewing the details for the Management group object we can see that members within this group have `GenericWrite` permissions over the `management_svc` account.
+
 ![Management Group to management_svc Account](Pasted image 20250326193909.png)
 _Management Group to management_svc Account Path_
 
 Viewing the details for the `management_svc` service account object we can see that they have `GenericAll` permissions over `ca_operator` group. Ignoring the the name of the machine, this heavily indicates that Active Directory Certificate Services (ADCS) are configured on the DC.
+
 ![management_svc to ca_operator Path](Pasted image 20250326194206.png)
 _management_svc to ca_operator Path_
 
@@ -179,6 +182,7 @@ With all of the above information gathered before performing any active testing,
 2. Use `GenericWrite` permissions as part of the `Management` group to perform a Shadow Credential Attack, gaining access to the `maangement_svc` service account. 
 3. Use the `GenericAll` permission to change the password the `ca_operator` service account. 
 We can use BloodHound's Pathfinding feature in order to visualize this attack chain wholistically.
+
 ![BH Pathfinding](Pasted image 20250326213353.png)
 _BloodHound Pathfinding Visual_
 
@@ -194,11 +198,12 @@ impacket-owneredit -action write -new-owner 'judith.mader' -target 'Management' 
 - `'CERTIFIED.HTB'/'judith.mader':'judith09'` : Identity of our controlled domain account to authenticate the operation. 
 
 The ownership is successfully modified as illustrated by the script's output.
+
 ![Impacket Owneredit Execution](Pasted image 20250314135922.png)
 _Impacket Owneredit Successful Execution_
 
 ### 1b. Add `WriteMembers` Permission Over Object
-With ownership over the Management group the `WriteMembers` permission can be granted in order to add ourselves to the group. To accomplish this  [impacket](https://github.com/fortra/impacket)'s `dacledit.py` script is utilized. 
+With ownership over the Management group the `WriteMembers` permission can be granted in order to add ourselves to the group. To accomplish this [impacket](https://github.com/fortra/impacket)'s `dacledit.py` script is utilized. 
 ```bash
 impacket-dacledit -action 'write' -rights 'WriteMembers' -principal 'judith.mader' -target-dn 'CN=MANAGEMENT,CN=USERS,DC=CERTIFIED,DC=HTB' 'CERTIFIED.HTB'/'judith.mader':'judith09'
 ```
@@ -229,6 +234,7 @@ _Successful Management Group User Addition_
 
 ### 1d. Adding Steps 1a-c Into Bash Script
 There is some type of scheduled task on the server that is resetting the changes made. Therefore, its best to place all of the execution steps into a single bash script that can be ran in order to get back to the same level of permission after running step 1c. 
+
 ![Machine Resetting DACL Changes](Pasted image 20250314143202.png)
 _Scheduled Task Resetting Changes Periodically_
 
@@ -305,7 +311,8 @@ We can verify this NT hash using [NetExec](https://github.com/Pennyw0rth/NetExec
 ```bash
 netexec smb dc01.certified.htb -u 'management_svc' -H 'a091c1832bcdd4677c28b5a6a1295584'
 ```
-![Compromised management_svc Account Proof][Pasted image 20250314145507.png]]
+
+![Compromised management_svc Account Proof](Pasted image 20250314145507.png)
 _Compromised management_svc Account Proof_
 > I skipped right to privilege escalation, but for anyone curious this step is when the `user.txt` flag can be retrieved. 
 {: .prompt-info }
