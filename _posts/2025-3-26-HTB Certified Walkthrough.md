@@ -415,7 +415,8 @@ From the above output we can gather the following details:
 5. Enrollment Flag : `NoSecurityExtension`
 
 ### 4b. ESC9 Privilege Escalation
-Certipy's [README](https://github.com/ly4k/Certipy?tab=readme-ov-file#esc9--esc10) contains a link to a Medium [https://research.ifcr.dk/certipy-4-0-esc9-esc10-bloodhound-gui-new-authentication-and-request-methods-and-more-7237d88061f7#:~:text=ESC9%20%E2%80%94%20No%20Security%20Extension] which explains the necessary criteria for abusing ESC9 for privilege escalation.
+Certipy's [README](https://github.com/ly4k/Certipy?tab=readme-ov-file#esc9--esc10) contains a link to a [Medium Certipy Article](https://research.ifcr.dk/certipy-4-0-esc9-esc10-bloodhound-gui-new-authentication-and-request-methods-and-more-7237d88061f7#:~:text=ESC9%20%E2%80%94%20No%20Security%20Extension) which explains the necessary criteria for abusing ESC9 for privilege escalation.
+
 ![ESC9 Absue Details](Pasted image 20250314164000.png)
 _ESC9 High-Level Abuse Details_
 

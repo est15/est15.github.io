@@ -53,6 +53,7 @@ The script utilizes the following regular expression in order to find all refere
 ```python
 images = re.findall(r"\[\[(?:.*?/)(.*?\.(?:png|jpg|gif))(?:\|.*?)]]", codecs.decode(vaultFile.read_bytes())) # Return List of Images
 ```
+
 Currently, the script is only programmed to find PNG/JPG/GIF attachments, but adding additional attachment cases would not be difficult. 
 
 #### RegEx Breakdown
