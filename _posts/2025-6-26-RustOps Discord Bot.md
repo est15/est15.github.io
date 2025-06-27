@@ -7,12 +7,15 @@ tags: [Python,Discord-Bot]
 img_path: /assets/rustops-bot/
 render_with_liquid: false
 ---
+![RustOps Bot PFP](RustOps PFP.png){: w="500" h="500" }
+_RustOps Bot ChatGPT Generated PFP_
 
 ## Introduction
 This blog post will provide the complete walkthrough steps for getting my RustOps Discord bot up and running. This includes creating the discord bot itself, getting the necessary API tokens, and setting up a server to run the bot. While this blog post is meant to be a full technical walkthrough, I do assume some level of prior technical knowledge such as understanding git and the command-line. Please reach out to me on Discord (Username: kidbuu2) for any questions, comments, or concerns. 
 
 ## 1. Creating a Discord Bot
 The section covers creating the RustOps (or whatever name you decide to give it) Discord bot. 
+
 ### 1.1 - Create New Application (Bot)
 First sign in to Discord's [developer portal](https://discord.com/developers/applications) using your existing Discord account. Once you're signed select Applications -> New Application and give your bot a name (RustOps perhaps?). Under "*General Information*" you can give your bot a display name, description, and Bot profile picture (pfp). I used ChatGPT to generate a pfp for the bot using a description of RustOps' features in the prompt. 
 
@@ -46,7 +49,7 @@ Then make sure to check the following **permissions**:
 7. Use Slash Commands
 8. View Channels
 
-![DC Bot Guild and Channel Permissions](Discord Bot Channel Permissions.png)
+![DC Bot Guild and Channel Permissions](Discord Bot Channel Permissions.png){: w="500" h="400" }
 _Bot Guild/Channel Permissions_
 
 Once all of the necessary permissions have been selected we will have our necessary installation URL. Copy the bot's installation link and paste this into your browser. This will allow a server to be selected for the bot to be added to. 
@@ -74,17 +77,16 @@ The third step is to obtain a BattleMetrics API key. RustOps utilizes data from 
 ### 3.1 - Generate BattleMetrics API Token
 If you do not already have an account then please register one on the site. Once your account has been registered then navigate to the [Developers Page](https://www.battlemetrics.com/developers) and select "*New Token*".
 
-![BM New API Token](BattleMetrics Developer Page New API Token.png)
+![BM New API Token](BattleMetrics Developer Page New API Token.png){: w="500" h="500" }
 _BattleMetrics Generate API Token_ 
 
 ### 3.2 - Select Necessary Permissions
 First write a description that can be used to identify what this token's purpose is, such as "*RustOps - Rust Group Session Tracking Discord Bot*" for example. Now I am no expert so I BELIEVE these are the minimum permissions necessary for the RustOps bot to function. Then select "Create Token" and make sure to copy this token to a secure location. 
-- Activity Log -> View Activity Log
 
 ![BM API Token](BattleMetrics Token Generated.png)
 _BattleMetrics API Token Generated_
 
-The bot is simply just pulling information that be freely accessed from the BattleMetric's site. However, some features require a subscription and this token will enable our bot to access these premium features. Below are the premium BattleMetrics features that the RustOps Discord bot utilizes.
+The bot is mostly pulling information that is freely accessible from the BattleMetric's database. However, some features require a premium monthly subscription. Generating this token will enable our bot to access these premium features. Below are the premium BattleMetrics features that the RustOps Discord bot utilizes.
 
 ![BM Required Premium Features](BattleMetrics Preimum Features Used.png)
 _BattleMetrics Premium Features Required for Bot_
@@ -100,18 +102,18 @@ This section walks through the steps to host the Discord bot on the Cloud using 
 #### (2) Create Heroku Application
 If you do not already have an account on [Heroku](https://signup.heroku.com/login) then go ahead and create one. Once you have an account navigate to your Dashboard --> New --> Create new app. Give this app any name you want that fits the naming conventions. This application will not be accessible to us. 
 
-![Heroku New Application](Creating Heroku Application.png)
+![Heroku New Application](Creating Heroku Application.png){: w="500" h="500" }
 _Heroku New Application_
 
 #### (3) Add PostgreSQL Addon
 The application will now show up in our dashboard. The next step is to add the "*Heroku Postgres*" addon for supporting PostgreSQL. This database will be used to track groups and the players in those groups. Within the newly created application's dashboard select *Resources* --> *Add-ons* --> *Search & select Heroku Postgres* --> *Essential 0*. The cheapest plan is more than enough to support RustOps. 
 
-![Heroku PostgreSQL Addon](Heroko Postgres Hyperlink.png)
+![Heroku PostgreSQL Addon](Heroko Postgres Hyperlink.png){: w="500" h="500" }
 _Heroku PostgreSQL Addon_
 
 Once the addon has been successfully added to our application we need to grab the unique URL that the RustOps bot will use to authenticate securely to the database. Under the "*Resources*" tab select the "Heroku Postgres" hyperlink. This will redirect you to Heroku's PostgreSQL management endpoint. Once you've connected to the management endpoint navigate to  "*Settings*" --> Under Administration select "*View Credentials*" --> copy the URL string in the URI column. This will be used later when configuring the bot's environment configuration variables. 
 
-![Heroku PostgreSQL URL](Heroku Postgres Link.png)
+![Heroku PostgreSQL URL](Heroku Postgres Link.png){: w="500" h="500" }
 _Heroku PostgreSQL Addon URL_
 
 #### (4) Install Git
@@ -123,7 +125,7 @@ _Git Version_
 #### (5) Install Heroku
 With the application created and the backend added on the next step is to get Heroku and PostgreSQL installed on our systems. *Note, I used Windows to configure Heroku*. The same steps should be very similar on another Heroku-supported operating system. Navigate to [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)'s documentation which walks through installing Heroku. In my case, I downloaded and ran the Windows 64-bit installer.  
 
-![Windows Installer](Heroku Windows Installer.png)
+![Windows Installer](Heroku Windows Installer.png){: w="500" h="500" } 
 _Heroku Windows Installer_
 
 With Heroku installed on our system press ***Windows Key + R*** --> ***Type cmd*** --> ***Press ok***. This will open a Command Prompt terminal for us.  
@@ -138,7 +140,7 @@ _Heroku CMD Login_
 
 Just noting that the application and the PostgreSQL addon could both be added from CMD using Heroku commands. To access our already created Heroku application we first need to grab the Heroku Git URL. Navigate back to the Heroku application's Settings tab and copy the Git URL. 
 
-![Heroku App Git URL](Heroku App Git URL.png)
+![Heroku App Git URL](Heroku App Git URL.png){: w="500" h="500" }
 _Heroku App Repo URL_
 
 Then back in our command prompt copy this repository in our current working directory. 
@@ -158,12 +160,12 @@ _Heroku Token Authorization_
 
 Then re-run the git clone command and enter your Heroku account's email in the username field and the auth token you just copied into the password field. 
 
-![Heroku Git Authorization](Heroku Git Authentication.png)
+![Heroku Git Authorization](Heroku Git Authentication.png){: w="300" h="300" }
 _Heroku Git Credential Authentication_
 
 This should result in a successful cloning of the application's repository. To check this enter `dir` into the CMD prompt and you should have a directory matching the application's name. Change into this directory by typing `cd <appname>` as seen from `dir` output. 
 
-![Heroku Application Repository Clone](Heroku successful Application Clone.png)
+![Heroku Application Repository Clone](Heroku successful Application Clone.png){: w="500" h="500" }
 _Heroku Successful App Repo Clone_
 
 #### (5) Install PostgreSQL
